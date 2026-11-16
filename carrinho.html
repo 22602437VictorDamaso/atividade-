@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Burger House: hambúrgueres artesanais, porções e combos para pedir em casa.">
+    <title>Carrinho | Burger House</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="carrinho.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="largura topo">
+            <a class="logo" href="index.html" aria-label="Burger House, início">
+                BURGER
+                <span>HOUSE</span>
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="pedidos.html">Meus Pedidos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="acoes">
+                <button class="botao-tema" id="botao-tema" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/sun.svg" alt="">
+                    <span id="nome-tema">Claro</span>
+                </button>
+                <a class="sacola" href="carrinho.html" aria-label="Abrir carrinho">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/shopping-bag.svg" alt="">
+                    <span id="quantidade-carrinho">0</span>
+                </a>
+            </div>
+            <div class="conta">
+                <a class="botao botao-branco" href="login.html">Login</a>
+                <a class="botao" href="cadastro.html">Cadastro</a>
+            </div>
+        </div>
+    </header>
+    <main class="largura carrinho">
+        <h1>Seu carrinho</h1>
+        <p class="subtitulo">Confira os itens antes de finalizar. Tá quase na hora!</p>
+        <div class="colunas-carrinho">
+            <section aria-label="Itens do carrinho">
+                <h2 class="titulo-carrinho" id="total-itens">0 itens no seu pedido</h2>
+                <div id="itens-carrinho"></div>
+                <a class="continuar" href="cardapio.html">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/arrow-left.svg" alt="">
+                    Continuar no cardápio
+                </a>
+            </section>
+            <section class="caixa resumo" aria-labelledby="titulo-resumo">
+                <h2 id="titulo-resumo">Resumo do pedido</h2>
+                <div class="linha-resumo">
+                    <p>Subtotal</p>
+                    <span id="subtotal">R$ 0,00</span>
+                </div>
+                <div class="linha-resumo">
+                    <p>Taxa de entrega</p>
+                    <span id="taxa">R$ 0,00</span>
+                </div>
+                <div class="linha-resumo total">
+                    <h3>Total</h3>
+                    <strong id="total">R$ 0,00</strong>
+                </div>
+                <div class="endereco-entrega">
+                    <h3 id="destinatario">Dados de entrega</h3>
+                    <p id="endereco-entrega">Faça login e preencha seus dados no perfil.</p>
+                    <strong>Previsão: 35–50 min</strong>
+                </div>
+                <button class="botao botao-largo" id="finalizar" type="button" disabled>Finalizar Pedido</button>
+                <p class="mensagem" id="mensagem-carrinho" role="status" hidden></p>
+            </section>
+        </div>
+    </main>
+    <footer class="rodape" id="contato">
+        <div class="largura">
+            <div class="dados-rodape">
+                <div>
+                    <a class="logo logo-rodape" href="index.html">BURGER HOUSE</a>
+                    <p>WhatsApp: (11) 99999-2020 · contato@burgerhouse.com.br</p>
+                    <p>
+                        Rua dos Pinheiros, 870 · São Paulo, SP
+                        <br>
+                        Terça a domingo, das 18h às 23h.
+                    </p>
+                </div>
+                <div class="redes">
+                    <h2>Acompanhe a casa</h2>
+                    <p>Instagram: @burgerhouse.sp</p>
+                    <p>Facebook: /burgerhouse.sp</p>
+                </div>
+            </div>
+            <p class="direitos">© 2026 Burger House. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

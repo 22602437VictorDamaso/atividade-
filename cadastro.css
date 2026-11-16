@@ -1,0 +1,14 @@
+.cadastro {
+    max-width: 650px;
+    padding: 40px 0 36px;
+}
+
+.cadastro .formulario {
+    margin-top: 24px;
+}
+
+@media (max-width: 760px) {
+    .cadastro {
+        padding: 28px 0;
+    }
+}

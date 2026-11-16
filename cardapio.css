@@ -1,0 +1,51 @@
+.cardapio {
+    padding: 38px 0;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-left: 14px;
+    border: 1px solid #deded9;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.busca input {
+    border: 0;
+    background-color: transparent;
+}
+
+.resultado {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.dados-produto .categoria {
+    color: #55554f;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dados-produto .ingredientes {
+    margin-bottom: 24px;
+    font-size: 12px;
+}
+
+.escuro .busca {
+    border-color: #383834;
+    background-color: #212120;
+}
+
+.escuro .categoria {
+    color: #b3b3aa;
+}
+
+@media (max-width: 760px) {
+    .cardapio {
+        padding: 28px 0;
+    }
+}

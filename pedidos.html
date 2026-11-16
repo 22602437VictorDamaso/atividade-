@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Burger House: hambúrgueres artesanais, porções e combos para pedir em casa.">
+    <title>Meus Pedidos | Burger House</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="pedidos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="largura topo">
+            <a class="logo" href="index.html" aria-label="Burger House, início">
+                BURGER
+                <span>HOUSE</span>
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="pedidos.html" class="atual" aria-current="page">Meus Pedidos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="acoes">
+                <button class="botao-tema" id="botao-tema" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/sun.svg" alt="">
+                    <span id="nome-tema">Claro</span>
+                </button>
+                <a class="sacola" href="carrinho.html" aria-label="Abrir carrinho">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/shopping-bag.svg" alt="">
+                    <span id="quantidade-carrinho">0</span>
+                </a>
+            </div>
+            <div class="conta">
+                <a class="botao botao-branco" href="login.html">Login</a>
+                <a class="botao" href="cadastro.html">Cadastro</a>
+            </div>
+        </div>
+    </header>
+    <main class="largura pedidos">
+        <h1>Meus Pedidos</h1>
+        <p class="subtitulo">Pedidos de exemplo, apenas para apresentação visual.</p>
+        <div class="filtros" aria-label="Exemplos de pedidos">
+            <span class="filtro selecionado">Todos (4)</span>
+            <span class="filtro">Em andamento (3)</span>
+        </div>
+        <div id="lista-pedidos">
+            <article class="caixa pedido">
+                <div class="topo-pedido">
+                    <div>
+                        <h2>Pedido #1048</h2>
+                        <p class="data-pedido">09/11/2026 · 19:42</p>
+                    </div>
+                    <span class="situacao">
+                        <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/circle.svg" alt="">
+                        Recebido
+                    </span>
+                </div>
+                <p class="itens-pedido">2x House Clássico + 1x Batata Crocante</p>
+                <p class="andamento">Pedido confirmado! Em breve vamos começar a preparar.</p>
+                <div class="total-pedido">
+                    <p>Itens R$ 64,70 + entrega R$ 5,00</p>
+                    <strong>Total R$ 69,70</strong>
+                </div>
+            </article>
+            <article class="caixa pedido">
+                <div class="topo-pedido">
+                    <div>
+                        <h2>Pedido #1047</h2>
+                        <p class="data-pedido">09/11/2026 · 19:30</p>
+                    </div>
+                    <span class="situacao">
+                        <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/circle.svg" alt="">
+                        Em preparação
+                    </span>
+                </div>
+                <p class="itens-pedido">1x Combo House</p>
+                <p class="andamento">Seu hambúrguer já está na chapa. Estamos caprichando!</p>
+                <div class="total-pedido">
+                    <p>Itens R$ 39,90 + entrega R$ 5,00</p>
+                    <strong>Total R$ 44,90</strong>
+                </div>
+            </article>
+            <article class="caixa pedido">
+                <div class="topo-pedido">
+                    <div>
+                        <h2>Pedido #1046</h2>
+                        <p class="data-pedido">09/11/2026 · 19:10</p>
+                    </div>
+                    <span class="situacao">
+                        <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/circle.svg" alt="">
+                        Saiu para entrega
+                    </span>
+                </div>
+                <p class="itens-pedido">1x Bacon da Casa + 1x Refrigerante de cola</p>
+                <p class="andamento">Está a caminho do seu endereço. Já pode preparar a mesa.</p>
+                <div class="total-pedido">
+                    <p>Itens R$ 39,80 + entrega R$ 5,00</p>
+                    <strong>Total R$ 44,80</strong>
+                </div>
+            </article>
+            <article class="caixa pedido">
+                <div class="topo-pedido">
+                    <div>
+                        <h2>Pedido #0982</h2>
+                        <p class="data-pedido">06/11/2026 · 20:15</p>
+                    </div>
+                    <span class="situacao entregue">
+                        <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/check.svg" alt="">
+                        Entregue
+                    </span>
+                </div>
+                <p class="itens-pedido">2x Combo House</p>
+                <p class="andamento">Entregue às 20:58. Obrigado por pedir com a gente!</p>
+                <div class="total-pedido">
+                    <p>Itens R$ 79,80 + entrega R$ 5,00</p>
+                    <strong>Total R$ 84,80</strong>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer class="rodape" id="contato">
+        <div class="largura">
+            <div class="dados-rodape">
+                <div>
+                    <a class="logo logo-rodape" href="index.html">BURGER HOUSE</a>
+                    <p>WhatsApp: (11) 99999-2020 · contato@burgerhouse.com.br</p>
+                    <p>
+                        Rua dos Pinheiros, 870 · São Paulo, SP
+                        <br>
+                        Terça a domingo, das 18h às 23h.
+                    </p>
+                </div>
+                <div class="redes">
+                    <h2>Acompanhe a casa</h2>
+                    <p>Instagram: @burgerhouse.sp</p>
+                    <p>Facebook: /burgerhouse.sp</p>
+                </div>
+            </div>
+            <p class="direitos">© 2026 Burger House. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

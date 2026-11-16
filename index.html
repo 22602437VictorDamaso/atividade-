@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Burger House: hambúrgueres artesanais, porções e combos para pedir em casa.">
+    <title>Início | Burger House</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="largura topo">
+            <a class="logo" href="index.html" aria-label="Burger House, início">
+                BURGER
+                <span>HOUSE</span>
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="index.html" class="atual" aria-current="page">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="pedidos.html">Meus Pedidos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="acoes">
+                <button class="botao-tema" id="botao-tema" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/sun.svg" alt="">
+                    <span id="nome-tema">Claro</span>
+                </button>
+                <a class="sacola" href="carrinho.html" aria-label="Abrir carrinho">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/shopping-bag.svg" alt="">
+                    <span id="quantidade-carrinho">0</span>
+                </a>
+            </div>
+            <div class="conta">
+                <a class="botao botao-branco" href="login.html">Login</a>
+                <a class="botao" href="cadastro.html">Cadastro</a>
+            </div>
+        </div>
+    </header>
+    <main class="largura inicio">
+        <section class="banner" aria-labelledby="titulo-inicio">
+            <div class="texto-banner">
+                <p class="chamada">ARTESANAL DE VERDADE.</p>
+                <h1 id="titulo-inicio">Seu hambúrguer favorito, na porta da sua casa!</h1>
+                <p>Feito na chapa, com ingredientes frescos. É só escolher que a gente leva até você.</p>
+                <a class="botao" href="cardapio.html">Peça Agora</a>
+                <p class="entrega">Entrega em 35–50 min · A partir de R$ 5,00</p>
+            </div>
+            <img class="foto-banner" src="https://images.pexels.com/photos/17518459/pexels-photo-17518459.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Hambúrguer artesanal com queijo, alface e tomate">
+        </section>
+        <section aria-labelledby="titulo-vendidos">
+            <div class="titulo-secao">
+                <h2 id="titulo-vendidos">Os mais vendidos</h2>
+                <a class="ver-cardapio" href="cardapio.html">
+                    Ver cardápio
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div class="produtos">
+                <article class="produto">
+                    <img class="foto-produto" src="https://images.pexels.com/photos/17518459/pexels-photo-17518459.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="House Clássico" loading="lazy">
+                    <div class="dados-produto">
+                        <h3>House Clássico</h3>
+                        <p>O clássico que sempre dá vontade.</p>
+                        <strong class="preco">R$ 24,90</strong>
+                        <button class="botao adicionar" type="button" data-produto="1">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+                <article class="produto">
+                    <img class="foto-produto" src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Bacon da Casa" loading="lazy">
+                    <div class="dados-produto">
+                        <h3>Bacon da Casa</h3>
+                        <p>Suculento, artesanal e cheio de sabor.</p>
+                        <strong class="preco">R$ 32,90</strong>
+                        <button class="botao adicionar" type="button" data-produto="2">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+                <article class="produto">
+                    <img class="foto-produto" src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Combo House" loading="lazy">
+                    <div class="dados-produto">
+                        <h3>Combo House</h3>
+                        <p>Seu pedido completo, sem complicar.</p>
+                        <strong class="preco">R$ 39,90</strong>
+                        <button class="botao adicionar" type="button" data-produto="3">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="promocao" aria-labelledby="titulo-promocao">
+            <img class="foto-promocao" src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Combo de hambúrguer com acompanhamento" loading="lazy">
+            <div class="texto-promocao">
+                <p class="aviso-promocao">PROMOÇÃO DA CASA</p>
+                <h2 id="titulo-promocao">Combo House por R$ 39,90</h2>
+                <p>
+                    House Clássico + batata 150 g + refrigerante 350 ml.
+                    <br>
+                    Válido de terça a quinta, das 18h às 20h.
+                </p>
+            </div>
+            <button class="botao adicionar" type="button" data-produto="3">Pedir meu combo</button>
+        </section>
+    </main>
+    <footer class="rodape" id="contato">
+        <div class="largura">
+            <div class="dados-rodape">
+                <div>
+                    <a class="logo logo-rodape" href="index.html">BURGER HOUSE</a>
+                    <p>WhatsApp: (11) 99999-2020 · contato@burgerhouse.com.br</p>
+                    <p>
+                        Rua dos Pinheiros, 870 · São Paulo, SP
+                        <br>
+                        Terça a domingo, das 18h às 23h.
+                    </p>
+                </div>
+                <div class="redes">
+                    <h2>Acompanhe a casa</h2>
+                    <p>Instagram: @burgerhouse.sp</p>
+                    <p>Facebook: /burgerhouse.sp</p>
+                </div>
+            </div>
+            <p class="direitos">© 2026 Burger House. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

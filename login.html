@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Burger House: hambúrgueres artesanais, porções e combos para pedir em casa.">
+    <title>Login | Burger House</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="largura topo">
+            <a class="logo" href="index.html" aria-label="Burger House, início">
+                BURGER
+                <span>HOUSE</span>
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="pedidos.html">Meus Pedidos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="acoes">
+                <button class="botao-tema" id="botao-tema" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/sun.svg" alt="">
+                    <span id="nome-tema">Claro</span>
+                </button>
+                <a class="sacola" href="carrinho.html" aria-label="Abrir carrinho">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/shopping-bag.svg" alt="">
+                    <span id="quantidade-carrinho">0</span>
+                </a>
+            </div>
+            <div class="conta">
+                <a class="botao botao-branco" href="login.html">Login</a>
+                <a class="botao" href="cadastro.html">Cadastro</a>
+            </div>
+        </div>
+    </header>
+    <main class="largura login">
+        <section class="boas-vindas">
+            <img src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Hambúrguer artesanal com bacon">
+            <h2>Bom te ver por aqui.</h2>
+            <p>Entre na sua conta e deixe o próximo hambúrguer com a gente.</p>
+        </section>
+        <section class="caixa" aria-labelledby="titulo-login">
+            <h1 id="titulo-login">Entrar na sua conta</h1>
+            <p class="subtitulo">Seu próximo pedido começa aqui.</p>
+            <form id="formulario-login">
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="mariana.oliveira@email.com" autocomplete="email" maxlength="254" required>
+                </div>
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <div class="campo-senha">
+                        <input id="senha" name="senha" type="password" placeholder="**********" autocomplete="current-password" minlength="8" maxlength="64" required>
+                        <button class="mostrar-senha" type="button" aria-label="Mostrar senha" aria-pressed="false">
+                            <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/eye.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <button class="esqueci-senha" id="esqueci-senha" type="button">Esqueceu sua senha?</button>
+                <p class="mensagem" id="mensagem-login" role="status" hidden></p>
+                <button class="botao botao-largo" type="submit">Entrar</button>
+            </form>
+            <p class="trocar-conta">
+                Ainda não tem conta?
+                <a href="cadastro.html">Cadastre-se</a>
+            </p>
+        </section>
+    </main>
+    <footer class="rodape" id="contato">
+        <div class="largura">
+            <div class="dados-rodape">
+                <div>
+                    <a class="logo logo-rodape" href="index.html">BURGER HOUSE</a>
+                    <p>WhatsApp: (11) 99999-2020 · contato@burgerhouse.com.br</p>
+                    <p>
+                        Rua dos Pinheiros, 870 · São Paulo, SP
+                        <br>
+                        Terça a domingo, das 18h às 23h.
+                    </p>
+                </div>
+                <div class="redes">
+                    <h2>Acompanhe a casa</h2>
+                    <p>Instagram: @burgerhouse.sp</p>
+                    <p>Facebook: /burgerhouse.sp</p>
+                </div>
+            </div>
+            <p class="direitos">© 2026 Burger House. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

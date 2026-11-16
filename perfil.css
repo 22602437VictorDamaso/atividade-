@@ -1,0 +1,66 @@
+.perfil {
+    max-width: 760px;
+    padding: 40px 0 36px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+    padding: 18px;
+}
+
+.iniciais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background-color: #ffca28;
+    color: #202020;
+    font-size: 17px;
+}
+
+.usuario h2 {
+    margin-bottom: 2px;
+    font-size: 17px;
+}
+
+.usuario p {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.titulo-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.titulo-formulario h2 {
+    margin-bottom: 0;
+}
+
+.sair {
+    margin-top: 28px;
+    background-color: #ffffff;
+}
+
+.escuro .sair {
+    background-color: #212120;
+}
+
+@media (max-width: 760px) {
+    .perfil {
+        padding: 28px 0;
+    }
+
+    .sair {
+        width: 100%;
+    }
+}

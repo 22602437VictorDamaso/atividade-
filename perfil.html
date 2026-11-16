@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Burger House: hambúrgueres artesanais, porções e combos para pedir em casa.">
+    <title>Meu perfil | Burger House</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="perfil.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="largura topo">
+            <a class="logo" href="index.html" aria-label="Burger House, início">
+                BURGER
+                <span>HOUSE</span>
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="pedidos.html">Meus Pedidos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="acoes">
+                <button class="botao-tema" id="botao-tema" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/sun.svg" alt="">
+                    <span id="nome-tema">Claro</span>
+                </button>
+                <a class="sacola" href="carrinho.html" aria-label="Abrir carrinho">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/shopping-bag.svg" alt="">
+                    <span id="quantidade-carrinho">0</span>
+                </a>
+            </div>
+            <div class="conta">
+                <a class="botao botao-branco" href="login.html">Login</a>
+                <a class="botao" href="cadastro.html">Cadastro</a>
+            </div>
+        </div>
+    </header>
+    <main class="largura perfil">
+        <h1>Meu perfil</h1>
+        <p class="subtitulo">Seus dados e endereço, sempre atualizados.</p>
+        <section class="caixa usuario" aria-label="Resumo do perfil">
+            <span class="iniciais" id="iniciais">MO</span>
+            <div>
+                <h2 id="nome-usuario">Mariana Oliveira</h2>
+                <p>Cliente Burger House</p>
+            </div>
+        </section>
+        <form class="caixa formulario" id="formulario-perfil">
+            <div class="titulo-formulario">
+                <h2>Dados pessoais</h2>
+                <button class="botao botao-branco" id="editar" type="button">Editar</button>
+            </div>
+            <div class="duas-colunas">
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" name="nome" type="text" placeholder="Mariana Oliveira" maxlength="80" required autocomplete="name">
+                </div>
+                <div class="campo">
+                    <label for="cpf">CPF</label>
+                    <input id="cpf" name="cpf" type="text" placeholder="123.456.789-09" maxlength="14" pattern="[0-9]{3}[.][0-9]{3}[.][0-9]{3}-[0-9]{2}" title="Preencha os 11 números do CPF." inputmode="numeric" required>
+                </div>
+                <div class="campo">
+                    <label for="nascimento">Nascimento</label>
+                    <input id="nascimento" name="nascimento" type="text" placeholder="15/05/1998" maxlength="10" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}" title="Use o formato dia/mês/ano." inputmode="numeric" required autocomplete="bday">
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" name="telefone" type="text" placeholder="(11) 98888-1234" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" title="Preencha o telefone com DDD." inputmode="numeric" required autocomplete="tel">
+                </div>
+                <div class="campo linha">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="mariana.oliveira@email.com" maxlength="254" required autocomplete="email">
+                </div>
+            </div>
+            <h2>Endereço de entrega</h2>
+            <div class="duas-colunas">
+                <div class="campo">
+                    <label for="cep">CEP</label>
+                    <input id="cep" name="cep" type="text" placeholder="05422-001" maxlength="9" pattern="[0-9]{5}-[0-9]{3}" title="Preencha os 8 números do CEP." inputmode="numeric" required autocomplete="postal-code">
+                </div>
+                <div class="campo">
+                    <label for="endereco">Endereço</label>
+                    <input id="endereco" name="endereco" type="text" placeholder="Rua dos Pinheiros" maxlength="100" required autocomplete="street-address">
+                </div>
+                <div class="campo">
+                    <label for="numero">Número</label>
+                    <input id="numero" name="numero" type="text" placeholder="450" maxlength="6" inputmode="numeric" required>
+                </div>
+                <div class="campo">
+                    <label for="complemento">Complemento</label>
+                    <input id="complemento" name="complemento" type="text" placeholder="Apto. 32" maxlength="60" autocomplete="address-line2">
+                </div>
+            </div>
+            <p class="localidade">Pinheiros · São Paulo / SP</p>
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <div class="campo-senha">
+                    <input id="senha" name="senha" type="password" placeholder="**********" autocomplete="new-password" minlength="8" maxlength="64">
+                    <button class="mostrar-senha" type="button" aria-label="Mostrar senha" aria-pressed="false">
+                        <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/eye.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <p class="mensagem" id="mensagem-formulario" role="status" hidden></p>
+            <button class="botao botao-largo" type="submit">Salvar alterações</button>
+        </form>
+        <button class="botao botao-branco sair" id="sair" type="button">Sair da conta</button>
+    </main>
+    <footer class="rodape" id="contato">
+        <div class="largura">
+            <div class="dados-rodape">
+                <div>
+                    <a class="logo logo-rodape" href="index.html">BURGER HOUSE</a>
+                    <p>WhatsApp: (11) 99999-2020 · contato@burgerhouse.com.br</p>
+                    <p>
+                        Rua dos Pinheiros, 870 · São Paulo, SP
+                        <br>
+                        Terça a domingo, das 18h às 23h.
+                    </p>
+                </div>
+                <div class="redes">
+                    <h2>Acompanhe a casa</h2>
+                    <p>Instagram: @burgerhouse.sp</p>
+                    <p>Facebook: /burgerhouse.sp</p>
+                </div>
+            </div>
+            <p class="direitos">© 2026 Burger House. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

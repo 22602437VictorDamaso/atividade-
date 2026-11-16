@@ -1,0 +1,52 @@
+.login {
+    width: 84%;
+    max-width: 1080px;
+    min-height: 538px;
+    display: grid;
+    grid-template-columns: 1fr 1.17fr;
+    align-items: center;
+    gap: 56px;
+    padding: 66px 0;
+}
+
+.boas-vindas img {
+    width: 100%;
+    aspect-ratio: 1.43;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.boas-vindas h2 {
+    font-size: 28px;
+}
+
+.boas-vindas p {
+    margin-bottom: 0;
+}
+
+.esqueci-senha {
+    margin: 0 0 22px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    color: #686862;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.escuro .esqueci-senha {
+    color: #b3b3aa;
+}
+
+@media (max-width: 760px) {
+    .login {
+        width: 90%;
+        min-height: 0;
+        grid-template-columns: 1fr;
+        padding: 52px 0;
+    }
+
+    .boas-vindas {
+        display: none;
+    }
+}

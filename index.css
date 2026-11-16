@@ -1,0 +1,169 @@
+.inicio {
+    padding: 30px 0;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+.texto-banner {
+    padding: 32px;
+}
+
+.texto-banner .chamada,
+.texto-banner .entrega {
+    color: #ffcc24;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.banner h1 {
+    max-width: 390px;
+    margin-bottom: 18px;
+    font-size: 40px;
+    line-height: 1.08;
+}
+
+.texto-banner p {
+    max-width: 420px;
+    color: #bdbdb5;
+    font-size: 13px;
+}
+
+.texto-banner .entrega {
+    margin: 16px 0 0;
+}
+
+.foto-banner {
+    width: 100%;
+    height: 100%;
+    min-height: 335px;
+    object-fit: cover;
+}
+
+.titulo-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.titulo-secao h2 {
+    margin-bottom: 0;
+}
+
+.ver-cardapio {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ver-cardapio .icone {
+    width: 14px;
+    height: 14px;
+}
+
+.inicio .foto-produto {
+    aspect-ratio: 2.2;
+}
+
+.promocao {
+    display: grid;
+    grid-template-columns: 24% 1fr auto;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+    margin-top: 30px;
+    border-radius: 6px;
+    background-color: #ffca28;
+    color: #111111;
+}
+
+.foto-promocao {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.texto-promocao {
+    padding: 18px 0;
+}
+
+.promocao p {
+    margin-bottom: 0;
+    color: #111111;
+    font-size: 12px;
+}
+
+.promocao .aviso-promocao {
+    margin-bottom: 4px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.promocao h2 {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.promocao .botao {
+    width: auto;
+    margin-right: 24px;
+}
+
+@media (max-width: 1000px) {
+    .banner h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 760px) {
+    .inicio {
+        padding: 24px 0;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+    }
+
+    .texto-banner {
+        padding: 24px 20px 16px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .foto-banner {
+        min-height: 0;
+        max-height: 260px;
+        aspect-ratio: 1.7;
+    }
+
+    .promocao {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .foto-promocao {
+        height: auto;
+        aspect-ratio: 2;
+    }
+
+    .texto-promocao {
+        padding: 20px 18px 14px;
+    }
+
+    .promocao .botao {
+        margin: 0 18px 18px;
+    }
+}

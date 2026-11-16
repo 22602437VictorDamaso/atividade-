@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Burger House: hambúrgueres artesanais, porções e combos para pedir em casa.">
+    <title>Cardápio | Burger House</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="cardapio.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="largura topo">
+            <a class="logo" href="index.html" aria-label="Burger House, início">
+                BURGER
+                <span>HOUSE</span>
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html" class="atual" aria-current="page">Cardápio</a>
+                <a href="pedidos.html">Meus Pedidos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="acoes">
+                <button class="botao-tema" id="botao-tema" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/sun.svg" alt="">
+                    <span id="nome-tema">Claro</span>
+                </button>
+                <a class="sacola" href="carrinho.html" aria-label="Abrir carrinho">
+                    <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/shopping-bag.svg" alt="">
+                    <span id="quantidade-carrinho">0</span>
+                </a>
+            </div>
+            <div class="conta">
+                <a class="botao botao-branco" href="login.html">Login</a>
+                <a class="botao" href="cadastro.html">Cadastro</a>
+            </div>
+        </div>
+    </header>
+    <main class="largura cardapio">
+        <h1>Nosso cardápio</h1>
+        <p class="subtitulo">Da primeira mordida à sobremesa. Escolha seu favorito.</p>
+        <div class="busca">
+            <img class="icone" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/search.svg" alt="">
+            <input id="busca" type="search" placeholder="Buscar hambúrguer, combo, bebida..." aria-label="Buscar produtos" maxlength="100">
+        </div>
+        <div class="filtros" aria-label="Categorias do cardápio">
+            <button class="filtro selecionado" type="button" data-categoria="Todos" aria-pressed="true">Todos</button>
+            <button class="filtro" type="button" data-categoria="Tradicionais" aria-pressed="false">Tradicionais</button>
+            <button class="filtro" type="button" data-categoria="Artesanais" aria-pressed="false">Artesanais</button>
+            <button class="filtro" type="button" data-categoria="Combos" aria-pressed="false">Combos</button>
+            <button class="filtro" type="button" data-categoria="Porções" aria-pressed="false">Porções</button>
+            <button class="filtro" type="button" data-categoria="Bebidas" aria-pressed="false">Bebidas</button>
+            <button class="filtro" type="button" data-categoria="Sobremesas" aria-pressed="false">Sobremesas</button>
+        </div>
+        <p class="resultado" id="resultado" role="status">6 produtos · Feitos na hora, do seu jeito.</p>
+        <div class="produtos" id="produtos">
+            <article class="produto" data-categoria="Tradicionais" data-nome="House Clássico O clássico que sempre dá vontade. Pão brioche, carne 150 g, cheddar, alface, tomate e molho da casa.">
+                <img class="foto-produto" src="https://images.pexels.com/photos/17518459/pexels-photo-17518459.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="House Clássico" loading="lazy">
+                <div class="dados-produto">
+                    <p class="categoria">Tradicionais</p>
+                    <h3>House Clássico</h3>
+                    <p>O clássico que sempre dá vontade.</p>
+                    <p class="ingredientes">Pão brioche, carne 150 g, cheddar, alface, tomate e molho da casa.</p>
+                    <strong class="preco">R$ 24,90</strong>
+                    <button class="botao adicionar" type="button" data-produto="1">Adicionar ao carrinho</button>
+                </div>
+            </article>
+            <article class="produto" data-categoria="Artesanais" data-nome="Bacon da Casa Suculento, artesanal e cheio de sabor. Pão brioche, carne 180 g, cheddar, bacon e cebola caramelizada.">
+                <img class="foto-produto" src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Bacon da Casa" loading="lazy">
+                <div class="dados-produto">
+                    <p class="categoria">Artesanais</p>
+                    <h3>Bacon da Casa</h3>
+                    <p>Suculento, artesanal e cheio de sabor.</p>
+                    <p class="ingredientes">Pão brioche, carne 180 g, cheddar, bacon e cebola caramelizada.</p>
+                    <strong class="preco">R$ 32,90</strong>
+                    <button class="botao adicionar" type="button" data-produto="2">Adicionar ao carrinho</button>
+                </div>
+            </article>
+            <article class="produto" data-categoria="Combos" data-nome="Combo House Seu pedido completo, sem complicar. House Clássico + batata frita 150 g + refrigerante de cola 350 ml.">
+                <img class="foto-produto" src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Combo House" loading="lazy">
+                <div class="dados-produto">
+                    <p class="categoria">Combos</p>
+                    <h3>Combo House</h3>
+                    <p>Seu pedido completo, sem complicar.</p>
+                    <p class="ingredientes">House Clássico + batata frita 150 g + refrigerante de cola 350 ml.</p>
+                    <strong class="preco">R$ 39,90</strong>
+                    <button class="botao adicionar" type="button" data-produto="3">Adicionar ao carrinho</button>
+                </div>
+            </article>
+            <article class="produto" data-categoria="Porções" data-nome="Batata Crocante Douradinha por fora, macia por dentro. Batata frita 150 g, sal e molho da casa à parte.">
+                <img class="foto-produto" src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Batata Crocante" loading="lazy">
+                <div class="dados-produto">
+                    <p class="categoria">Porções</p>
+                    <h3>Batata Crocante</h3>
+                    <p>Douradinha por fora, macia por dentro.</p>
+                    <p class="ingredientes">Batata frita 150 g, sal e molho da casa à parte.</p>
+                    <strong class="preco">R$ 14,90</strong>
+                    <button class="botao adicionar" type="button" data-produto="4">Adicionar ao carrinho</button>
+                </div>
+            </article>
+            <article class="produto" data-categoria="Bebidas" data-nome="Refrigerante de cola Bem gelado para acompanhar. Refrigerante de cola em lata, 350 ml. Contém açúcar e cafeína.">
+                <img class="foto-produto" src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Refrigerante de cola" loading="lazy">
+                <div class="dados-produto">
+                    <p class="categoria">Bebidas</p>
+                    <h3>Refrigerante de cola</h3>
+                    <p>Bem gelado para acompanhar.</p>
+                    <p class="ingredientes">Refrigerante de cola em lata, 350 ml. Contém açúcar e cafeína.</p>
+                    <strong class="preco">R$ 6,90</strong>
+                    <button class="botao adicionar" type="button" data-produto="5">Adicionar ao carrinho</button>
+                </div>
+            </article>
+            <article class="produto" data-categoria="Sobremesas" data-nome="Brownie com Sorvete Um final doce para o seu pedido. Brownie de chocolate, sorvete de baunilha e calda de chocolate.">
+                <img class="foto-produto" src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Brownie com Sorvete" loading="lazy">
+                <div class="dados-produto">
+                    <p class="categoria">Sobremesas</p>
+                    <h3>Brownie com Sorvete</h3>
+                    <p>Um final doce para o seu pedido.</p>
+                    <p class="ingredientes">Brownie de chocolate, sorvete de baunilha e calda de chocolate.</p>
+                    <strong class="preco">R$ 18,90</strong>
+                    <button class="botao adicionar" type="button" data-produto="6">Adicionar ao carrinho</button>
+                </div>
+            </article>
+        </div>
+        <p id="sem-produtos" hidden>Nenhum produto encontrado. Tente outro nome ou categoria.</p>
+    </main>
+    <footer class="rodape" id="contato">
+        <div class="largura">
+            <div class="dados-rodape">
+                <div>
+                    <a class="logo logo-rodape" href="index.html">BURGER HOUSE</a>
+                    <p>WhatsApp: (11) 99999-2020 · contato@burgerhouse.com.br</p>
+                    <p>
+                        Rua dos Pinheiros, 870 · São Paulo, SP
+                        <br>
+                        Terça a domingo, das 18h às 23h.
+                    </p>
+                </div>
+                <div class="redes">
+                    <h2>Acompanhe a casa</h2>
+                    <p>Instagram: @burgerhouse.sp</p>
+                    <p>Facebook: /burgerhouse.sp</p>
+                </div>
+            </div>
+            <p class="direitos">© 2026 Burger House. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
